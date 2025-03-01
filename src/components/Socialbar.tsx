@@ -2,8 +2,6 @@ import githubIcon from '../assets/icons/github.svg';
 import linkedinIcon from '../assets/icons/linkedin.svg';
 import emailIcon from '../assets/icons/email.svg';
 
-import { useState } from 'react';
-
 const CONFIG = {
     "GITHUB_LINK": "https://github.com/JoshuaGreeff",
     "LINKEDIN_LINK": "https://linkedin.com/in/JoshuaGreeff",
@@ -11,12 +9,6 @@ const CONFIG = {
 }
 
 const Socialbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleOpen = () => {
-        setIsOpen(!isOpen);
-    };
-
     return (
         <div className="fixed right-1 bottom-1 flex flex-col items-center space-y-4 md:p-2 p-1 bg-gray-900 rounded-full">
             <a href={CONFIG.GITHUB_LINK} target="_blank" rel="noopener noreferrer">

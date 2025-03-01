@@ -1,5 +1,5 @@
 import Intro from './components/Intro';
-import SocialBar from './components/SocialBar';
+import SocialBar from './components/Socialbar';
 import About from './components/About';
 import Skills from './components/Skills';
 import Education from './components/Education';
