@@ -1,10 +1,11 @@
-import React from 'react';
+import profilepic from '../assets/media/profilepic.png';
 
 const About = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen min-w-screen bg-gray-100 p-4">
-            <div className="bg-white shadow-md rounded-lg p-6 max-w-6xl">
-                <h1 className="text-3xl font-bold mb-4">About Me</h1>
+        <div id='about' className="flex flex-col items-center justify-center min-h-screen min-w-screen bg-gray-900 p-4">
+            <img src={profilepic} alt="" className="max-w-1/2 w-72 mb-20" />
+            <div className="border-2 border-blue-500 text-white rounded-md p-6 max-w-5/6">
+                <h1 className="text-3xl font-bold mb-4 border-b-2 border-b-blue-500">About Me</h1>
                 <p className="text-lg mb-2">
                     Technically skilled and hands-on IT Systems Engineer with experience in <b>microservice architecture</b>, <b>software development</b>, and <b>cloud infrastructure</b> from internships, previous positions, and personal home lab projects.
                 </p>

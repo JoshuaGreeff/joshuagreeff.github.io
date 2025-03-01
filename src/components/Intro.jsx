@@ -5,7 +5,7 @@ const CONFIG = {
   "FIRST_NAME": "Joshua",
   "LAST_NAME": "Greeff",
 
-  "JOB_TITLES": ["Microservices Architect", "System Administrator", "Cloud Architect", "Security Engineer", "Glorified IT Guy"],
+  "JOB_TITLES": ["Microservices Architect", "Systems Administrator", "Cloud Architect", "Security Engineer", "Glorified IT Guy"],
   "JOB_EMOJIS": ["🏗️", "🖥️", "☁️", "🔐", "🤖"]
 }
 
@@ -30,8 +30,10 @@ function Intro() {
     if (!isDeleting && text === currentPhrase + CONFIG.JOB_EMOJIS[phraseIndex]) {
       timeout = setTimeout(() => setIsDeleting(true), pauseDuration);
     } else if (isDeleting && text === "") {
-      setIsDeleting(false);
-      setPhraseIndex((prev) => (prev + 1) % JOB_TITLES.length);
+      timeout = setTimeout(() => {
+        setIsDeleting(false);
+        setPhraseIndex((prev) => (prev + 1) % JOB_TITLES.length);
+      }, pauseDuration / 3);
     } else {
       timeout = setTimeout(() => {
         setText((prev) =>
@@ -51,8 +53,8 @@ function Intro() {
 
   return (
     <div className="w-full h-screen text-center text-white items-center flex flex-col justify-center">
-      <h1 className="text-9xl font-light mt-2">{CONFIG.FIRST_NAME} <span className="font-bold">{CONFIG.LAST_NAME}</span></h1>
-      <div className="whitespace-nowrap w-1/2 text-5xl font-medium mt-2 flex">
+      <h1 className="text-4xl md:text-6xl lg:text-9xl font-light mt-2">{CONFIG.FIRST_NAME} <span className="font-bold">{CONFIG.LAST_NAME}</span></h1>
+      <div className="w-full whitespace-nowrap text-xl md:text-4xl lg:text-5xl font-medium mt-6">
         <span>I'm {vowels.includes(text[0]?.toLowerCase()) ? "an" : "a"}&nbsp;</span>
         <span className="text-blue-500">{text}</span>
         <span className="text-blue-500 font-bold animate-[blink_0.5s_step-start_infinite]">|</span>
