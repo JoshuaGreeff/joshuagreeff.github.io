@@ -3,10 +3,10 @@ name: Deploy React App with gh-pages
 on:
   push:
     branches:
-      - main  # Runs when the main branch is updated
+      - main
 
 permissions:
-  contents: write  # Needed to push to gh-pages branch
+  contents: write  # Ensures write access for deployment
 
 jobs:
   deploy:
@@ -28,5 +28,12 @@ jobs:
       - name: Build the project
         run: npm run build
 
+      - name: Configure Git User
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+
       - name: Deploy using gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npm run deploy
