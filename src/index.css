@@ -1,5 +1,29 @@
 @import "tailwindcss";
 
+html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+#root {
+  width: 100svw;
+  height: 100svh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; }
