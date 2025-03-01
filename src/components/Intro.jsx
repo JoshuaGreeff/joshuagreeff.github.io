@@ -5,12 +5,12 @@ const CONFIG = {
   "FIRST_NAME": "Joshua",
   "LAST_NAME": "Greeff",
 
-  "JOB_TITLES": ["Microservices Architect", "Systems Administrator", "Cloud Architect", "Security Engineer", "Glorified IT Guy"],
-  "JOB_EMOJIS": ["🏗️", "🖥️", "☁️", "🔐", "🤖"]
+  "JOB_TITLES": ["Glorified IT Guy", "Microservices Architect", "Systems Administrator", "Cloud Architect", "Security Engineer"],
+  "JOB_EMOJIS": ["🤖", "🏗️", "🖥️", "☁️", "🔐"]
 }
 
-const wordTypingDuration = 1250; // Time (ms) to type each word
-const pauseDuration = 1750; // Pause before deleting & switching words
+const wordTypingDuration = 1000; // Time (ms) to type each word
+const pauseDuration = 1500; // Pause before deleting & switching words
 
 const vowels = ["a", "e", "i", "o", "u"];
 
@@ -61,10 +61,13 @@ function Intro() {
       </div>
 
       {/* Mouse Bottom Effect To Indicate Scroll Functionality */}
-      <div className="absolute bottom-2 border-2 border-white w-10 h-15 rounded-full items-center justify-center flex">
-        <div className="w-full h-full rounded-full bg-black opacity-10" />
-        <div className="absolute top-3 w-1 h-3 bg-white animate-bounce rounded-full" />
+      <div className="absolute bottom-0 w-20 h-20 rounded-t-full items-center justify-center flex">
+        <div className="relative border-2 border-white w-10 h-15 rounded-full items-center justify-center flex">
+          <div className="w-full h-full rounded-full bg-black opacity-10" />
+          <div className="absolute top-3 w-1 h-3 bg-white animate-bounce rounded-full" />
+        </div>
       </div>
+      
 
       <img src={background} alt="" className="fixed object-cover inset-0 w-full h-full -z-10" />
     </div>

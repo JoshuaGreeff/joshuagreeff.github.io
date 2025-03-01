@@ -18,7 +18,7 @@ const Socialbar = () => {
     };
 
     return (
-        <div className="fixed right-0 bottom-0 flex flex-col items-center space-y-4 md:p-2 p-1">
+        <div className="fixed right-1 bottom-1 flex flex-col items-center space-y-4 md:p-2 p-1 bg-gray-900 rounded-full">
             <a href={CONFIG.GITHUB_LINK} target="_blank" rel="noopener noreferrer">
                 <img src={githubIcon} alt="GitHub" className="w-8 h-8 md:w-12 md:h-12" />
             </a>

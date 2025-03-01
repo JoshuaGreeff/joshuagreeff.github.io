@@ -30,3 +30,32 @@ body {
   100% { opacity: 1; }
 }
 
+/* Scrollbar Track (Background) */
+::-webkit-scrollbar {
+  display: none;
+  width: 8px; /* For vertical scrollbar */
+  height: 8px; /* For horizontal scrollbar */
+}
+
+/* Scrollbar Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-500); /* Match your theme */
+  border-radius: 4px;
+}
+
+/* Scrollbar Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-blue-200); /* Darker shade */
+}
+
+/* Scrollbar Track (Empty space behind thumb) */
+::-webkit-scrollbar-track {
+  background: var(--color-gray-900); /* Darker background */
+}
+
+/* Scrollbar Corner */
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
