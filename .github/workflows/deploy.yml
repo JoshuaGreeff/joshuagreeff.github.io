@@ -1,54 +1,51 @@
-name: Deploy React App to GitHub Pages
+name: Deploy
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-    
+
     steps:
-      # Checkout the repository
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      # Set up Node.js
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
-        with:
-          node-version: '18'
 
-      # Install dependencies
       - name: Install dependencies
-        run: npm install
+        uses: npm-install
 
-      # Build the project
-      - name: Build React app
+      - name: Build project
         run: npm run build
 
-      # Upload the build folder as an artifact
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Upload production-ready build files
+        uses: actions/upload-artifact@v4
         with:
-          path: dist  # path to the build directory
+          name: github-pages
+          path: dist
 
   deploy:
-    runs-on: ubuntu-latest
+    name: Deploy
     needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
 
     steps:
-      # Checkout the repository again
-      - name: Checkout repository
+      - name: Checkout repo (Again)
         uses: actions/checkout@v4
 
-      # Deploy to GitHub Pages using deploy-pages
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: dist
+
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}  # Uses GitHub's built-in token for authentication
+          github_token: ${{ secrets.GITHUB_TOKEN }}
