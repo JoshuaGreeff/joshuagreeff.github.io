@@ -7,7 +7,7 @@ export default function IndustryExperiencePage() {
           {/* G-Automation Inc. Experience */}
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold border-b-2 border-blue-500 pb-2">
-              G-Automation Inc. | USC | Spartanburg, SC
+              G-Automation Inc. | Spartanburg, SC
             </h2>
             <p className="text-lg">Feb. 2024 – Jan. 2025</p>
             <h3 className="text-xl font-medium">Infrastructure & Web Development Intern</h3>

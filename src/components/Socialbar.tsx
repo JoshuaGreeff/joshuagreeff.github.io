@@ -10,15 +10,15 @@ const CONFIG = {
 
 const Socialbar = () => {
     return (
-        <div className="fixed right-1 bottom-1 flex flex-col items-center space-y-4 md:p-2 p-1 bg-gray-900 rounded-full">
+        <div className="fixed right-1 bottom-1 flex flex-col items-center space-y-4 md:p-2 p-1">
             <a href={CONFIG.GITHUB_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={githubIcon} alt="GitHub" className="w-8 h-8 md:w-12 md:h-12" />
+                <img src={githubIcon} alt="GitHub" className="w-8 h-8 md:w-12 md:h-12 bg-gray-900 rounded-full" />
             </a>
             <a href={CONFIG.LINKEDIN_LINK} target="_blank" rel="noopener noreferrer">
-                <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8 md:w-12 md:h-12" />
+                <img src={linkedinIcon} alt="LinkedIn" className="w-8 h-8 md:w-12 md:h-12 bg-gray-900 rounded-full" />
             </a>
             <a href={"mailto:" + CONFIG.EMAIL} target="_blank" rel="noopener noreferrer">
-                <img src={emailIcon} alt="Email" className="w-8 h-8 md:w-12 md:h-12" />
+                <img src={emailIcon} alt="Email" className="w-8 h-8 md:w-12 md:h-12 bg-gray-900 rounded-full" />
             </a>
         </div>
     );
