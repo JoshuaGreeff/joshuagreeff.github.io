@@ -5,7 +5,7 @@ const CONFIG = {
   "FIRST_NAME": "Joshua",
   "LAST_NAME": "Greeff",
 
-  "JOB_TITLES": ["Glorified IT Guy", "Microservices Architect", "Systems Administrator", "Cloud Architect", "Security Engineer"],
+  "JOB_TITLES": ["IT Guy", "Microservices Architect", "Systems Administrator", "Cloud Architect", "Security Engineer"],
   "JOB_EMOJIS": ["🤖", "🏗️", "🖥️", "☁️", "🔐"]
 }
 
