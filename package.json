@@ -1,7 +1,7 @@
 {
   "name": "portfolio-builder",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "homepage": "https://joshuagreeff.github.io/",
   "scripts": {
@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "portfolio-builder": "file:",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

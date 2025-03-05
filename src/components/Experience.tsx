@@ -1,7 +1,7 @@
 export default function IndustryExperiencePage() {
     return (
       <div className="bg-gray-900 text-white py-10 px-5">
-        <div className="max-w-4xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-12">
           <h1 className="text-4xl font-semibold text-center mb-8">Industry Experience</h1>
   
           {/* G-Automation Inc. Experience */}
