@@ -14,7 +14,7 @@ export default function EducationPage() {
             <ul className="space-y-2">
               <li className="text-gray-400">GPA: 3.9/4.0</li>
               <li className="text-gray-400">Promise Scholar, Palmetto Fellows Recipient</li>
-              <li className="text-gray-400">President's List/Dean's List (2021-2025)</li>
+              <li className="text-gray-400">President's List/Dean's List (2018-2025)</li>
             </ul>
           </div>
   
@@ -25,7 +25,7 @@ export default function EducationPage() {
             <ul className="space-y-2">
               <li className="text-gray-400">GPA: 3.9/4.0</li>
               <li className="text-gray-400">Scholar's Academy @ USC Upstate</li>
-              <li className="text-gray-400">President's List/Dean's List (2021-2022) @ USC Upstate</li>
+              <li className="text-gray-400">President's List/Dean's List (2018-2025) @ USC Upstate</li>
 
             </ul>
           </div>
