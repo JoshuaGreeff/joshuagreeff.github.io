@@ -29,7 +29,6 @@ body {
 
 html, body, #root {
   -webkit-overflow-scrolling: none; /* Disables momentum scrolling */
-  touch-action: none; /* Prevents touch-based scrolling */
 }
 
 @keyframes blink {
