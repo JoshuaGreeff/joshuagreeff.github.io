@@ -7,13 +7,13 @@ const About = () => {
             <div className="border-2 border-blue-500 text-white rounded-md p-6 max-w-5/6 text-center md:text-left">
                 <h1 className="text-3xl font-bold mb-4 border-b-2 border-b-blue-500">About Me</h1>
                 <p className="text-lg mb-2">
-                    Technically skilled and hands-on IT Systems Engineer with experience in <b>microservice architecture</b>, <b>software development</b>, and <b>cloud infrastructure</b> from internships, previous positions, and personal home lab projects.
+                    Technically skilled and hands-on IT Systems Engineer with experience in <b>microservice architecture</b>, <b>software development</b>, and various <b>cloud platforms</b> from internships, previous positions, and personal home lab projects.
                 </p>
                 <p className="text-lg mb-2">
                     Graduating in May 2025 as a USC Upstate <b>Computer Science</b> and <b>Cybersecurity</b> double major with minors in <b>Mathematics</b> and <b>Business Administration</b>.
                 </p>
                 <p className="text-lg">
-                    Seeking a job opportunity in <b>Cybersecurity</b>, <b>IT</b>, or <b>Cloud Architecture</b>.
+                    Seeking an opportunity in <b>Cybersecurity</b>, <b>IT</b>, or <b>Cloud Engineering</b>.
                 </p>
             </div>
         </div>
